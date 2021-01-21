@@ -1,0 +1,207 @@
+
+.margenContacto{
+    height: 21.23%;
+}
+body{
+    background-color: rgb(41 61 78);
+}
+
+/*-------------------------------------------contacto---*/
+
+/*--mi estilo de contacto--*/
+.contactoWrap{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/detrascontacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contactoFiltro{
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 62, 80,.9);
+}
+.contacto{
+    width: 80%;
+    min-height: 95vh;
+    padding: 5rem 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 45rem;
+    grid-template-rows: 49rem;
+    gap: 2.2rem;
+}
+
+.contacto1{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+.contacto1 h4{
+    font-size: 3.1rem;
+    line-height: 6rem;
+    font-weight: 400;
+    margin: 6rem 0 2rem 0;
+    color: white;
+    font-weight: 400;
+}
+.contacto1 h5{
+    font-size: 2rem;
+    font-style: italic;
+    font-family: var(--fuente);
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.contacto1 p{
+    font-size: 1.55rem;
+    font-family: var(--fuente3);
+    color: turquoise;
+    padding-left: 1.5rem;
+}
+
+.contactotelefono{
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+.contactotelefonotelefono{
+    color: black;
+    font-weight: bold;
+    border-left: 2px solid white;
+}
+.contactotelefono .containericonocontacto{
+    background: white;
+    border-radius: 50%;
+    margin: 0 1.5rem 1rem 0;
+}
+.contactotelefono img{
+    width: 3rem;
+    margin: 1rem;
+}
+.contactotelefonoultimo{
+    border-bottom: 1px solid grey;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.contacto1 .seguinosredes{
+    margin: 0;
+    font-size: 2rem;
+    line-height: 6rem;
+    font-weight: 500;
+}
+.contactoContenido{
+    font-weight: 500;
+    margin-left: 1rem;
+    color: white;
+}
+/*------*/
+.contactoredes{
+   /* width: 60%; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactoredes .face{
+  /*  color: #0572e6;*/
+  color: turquoise;
+}
+.contactoredes .insta{
+  /*  color: #ed6039;*/
+  color: turquoise;
+}
+.contactoredes .twit{
+   /* color: #1da1f2;*/
+   color: turquoise;
+}
+.contactoredes .pint{
+   /* color: #c2191e;*/
+   color: turquoise;
+}
+.contactoredes .wap{
+   /* color: #1bd741;*/
+   color: turquoise;
+    font-weight: 600;
+}
+.contactoredes span{
+    font-size: 2.4rem;
+    margin: 0 1rem 0 0; 
+}
+
+/*---FORMULARIO DE CONTACTO---*/
+
+.formulariohijo{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255 255 255 / 1);
+    padding: 3rem;
+    border-radius: 9px;
+ }
+ .formulariohijo h2{
+     font-size: 3em;
+     padding: .5em;
+     text-align-last: center;
+ }
+ .inPut,textarea{
+     margin-bottom: 1.8em;
+     padding: .75em;
+     font-size: 1.2em;
+     border: none;
+    border-bottom: 1px solid grey;
+ }
+ textarea{
+     min-height: 14rem;
+     max-height: 16rem;
+     max-width: 100%;
+     min-width: 100%;
+ }
+ .submit{
+     font-size: 1.6em;
+     color: white;
+     font-weight: bold;
+     background-color: seagreen;
+     cursor: pointer;
+     border-radius: 8px;
+ }
+ 
+ /*---MENSAJE GRACIAS---*/
+ .mensajeGracias{
+    width: 60%;
+    margin: auto;
+    display: none;
+ }
+ .mensajeGracias p{
+    text-align: center;
+    padding: 1rem;
+    background: lightgreen;
+    font-size: 2rem;
+    margin-top: 3rem;
+ }
+/*---fn del formulario---*/
+b{
+    color: red;
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+.areaTexto{
+    font-size: 1.6rem;
+    height: 16rem;
+}
+
+.sesion{
+    text-align: center;
+    background: green;
+    padding: 2rem;
+    color: white;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 8px;
+
+}
+
+

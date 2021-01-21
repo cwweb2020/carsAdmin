@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+
+p{
+    font-size: 1.7rem;
+}
+ul li{
+    font-size: 1.6rem;
+}
+.contenedor .fila ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: none;
+}
+.contenedor .fila ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px lightgrey;
+    padding: 2rem 0;
+}
+.contenedor .fila ul li img{
+    width: 25rem;
+    margin: 1rem;
+    width: 25rem;
+    height: 16.6rem;
+    object-fit: cover;
+}
+.contenedor .fila ul li p{
+    padding: 1rem 1rem 0 1rem;
+    width: 270px;
+    font-size: 15px;
+}
+.imgModal{
+    width: 76rem;
+    height: 55rem;
+    object-fit: cover;
+}
+.slider{
+    margin-bottom: 10rem;
+}
+.botones{
+    display: flex;
+    width: 39vw;
+    height: 9vh;
+    margin: 0 0 2rem 12%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+.botones button{
+    padding: 0.9rem 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px black;
+    border: none;
+    width: 14rem;
+    height: 5rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background: lightgrey;
+}
+.botones button:hover{
+    background: white;
+}
+.green:hover{
+    transform: scale(1.02);
+}
+
+/**-----------------ESTILOS DEL COMPONENTE HEADER**/
+ /*barra de arriba*/
+
+ .barrita1{
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    background-color: #fff200;
+    /*background: #ffb61c;*/
+    font-size: 1.4rem; 
+    justify-content: space-between;
+    align-items: center;
+}
+.space{
+    opacity: 0;
+}
+.barrita2{
+    display: flex;
+    margin-right: 2rem;
+}
+.barritahijo{
+   display: flex;
+   align-items: center;
+   margin-right: 2rem;
+}
+.barritahijo a{
+    margin: 0 1rem;
+}
+.barrita1 h4{
+    font-size: 2rem;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 4rem;
+    font-weight: 500;
+}
+.barrita1 h4 .telefonito{
+    margin: 0 8px 0 3px;
+}
+.barrita2 .f, .i, .t,.p{
+    margin: .7rem;
+    color: black;
+}
+
+.p{
+    margin-right: 4rem;
+}
+.barrita h3{
+    /*font-family: ;*/
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 10rem;
+    text-align: center;
+}
+
+/* fin barra de arriba*/
+
+
+
+.secNav{
+    width: 100vw;
+}
+.secNav .secNavwrapper{
+    width: inherit;
+    height: inherit;
+}
+.secNav .secNavwrapper img{
+    width: 100%;
+    height: 100%;
+}
+.secNav .secNavwrapper{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+}
+
+.secNav .secNavwrapper .relleno{
+    flex: 1;
+    background: rgb(0, 0, 0,0.8);
+    border-right: 8px solid #639bf7;
+}
+.secNav .secNavwrapper .relleno h1{
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    color: #f5f20e;
+    font-size: 4.7rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.secNav .secNavwrapper nav{
+    height: inherit;
+    background: rgb(0, 0, 0,0.8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 2;
+}
+.secNav .secNavwrapper nav a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #f5f20e;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+.secNav .secNavwrapper nav a:hover{
+    text-decoration: underline;
+}
+.secNav .secNavwrapper .hogar{
+    font-size: 3rem;
+    letter-spacing: 2.6px;
+    padding: 0 2rem;
+    border-radius: 8px;
+    color: deeppink;
+    font-weight: 600;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+.headerTotal{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.secNav .hamburg{
+    display: none;
+}
+
+
+/**-----------------ESTILOS DEL COMPONENTE HEADER**/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+  
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/**-----------------ESTILOS PRODUCTOS.........**/
+
+.productWrapper{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(249 246 192 / 51%) ;
+    padding-bottom: 3rem;
+}
+.productWrapper .tituloProducto{
+    margin: 0;
+    background: black;
+    color: yellow;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*....alerta gris ...*/
+.productWrapper .alertCurso{
+    /*background: #fbfbf8;*/
+    background: #fdf88a;
+    width: 85%;
+    box-shadow: 0 1.5px 4px grey;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+.productWrapper .alertCurso span{
+    margin-right: 2rem;
+    font-size: 3rem;
+    color: mediumvioletred;
+}
+.productWrapper .alertCurso .span2{
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+}
+.productWrapper .alertCurso .barra{
+    margin: 0 10px;
+}
+
+/*-----------------MENU LATERAL  ----*/
+.productWrapper .menuLista{
+   /* flex-basis: 22%; */
+    width: 22%;
+    background: black;
+    height: 80vh;
+    font-family: 'Shadows Into Light', cursive;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.productWrapper  .menuLista ul li{
+    text-decoration: none;
+    height: 67px;
+    color: yellow;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 700;
+    justify-content: space-between;
+    letter-spacing: 2.2px;
+    font-size: 1.9rem;
+}
+.productWrapper .menuLista ul li button{
+    background: none;
+    border: none;
+    color: yellow;
+    font-size: 16px;
+    font-weight: 800;
+}
+.productWrapper  .menuLista ul li span{
+    font-size: 12px;
+}
+.productWrapper  .cardList{
+    flex: 1;
+    padding-left: 11px;
+}
+.productoEnvoltura .menuLista ul li:first-child{
+    color: white;
+    letter-spacing: 2.2px;
+    background: crimson;
+   
+}
+
+.productoEnvoltura .menuLista ul li:hover{
+    cursor: pointer;
+}
+.productoEnvoltura .menuLista ul .primerhijo:hover{
+    background: crimson;
+    cursor: default;
+}
+.productoEnvoltura{
+    width: 95%;
+    margin: 7rem auto;
+    display: flex;
+}
+/*...... titulo de la lista ....*/
+.productWrapper .titulodelista{
+    background: none;
+    border: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.productWrapper .titulodelista span{
+    display: none;
+}
+
+/*-------------TARJETAS-------------*/
+.tarjetasTotal{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-gap: 3rem;
+    width: 78%;
+    grid-template-rows: 42rem;
+   /* display: flex;
+    justify-content: space-evenly;
+    flex-basis: 78%;
+    flex-wrap: wrap; */
+}
+.tarjetasTotal .tarjetasWrapper{
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 1px 10px 0px rgb(128 128 128 / 0.5);
+    border-radius: 8px;
+   /* width: calc(100% /3.6 - 20px);
+    margin-bottom: 3rem; */
+}
+
+.tarjetasTotal .tarjetasWrapper .contenedorImagen{
+    width: 100%;
+    height: 42%;
+}
+.tarjetasTotal .tarjetasWrapper .contenedorImagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tarjetasTotal .tarjetasWrapper .contenidoTarjeta h4{
+    text-transform: capitalize;
+}
+/* .tarjetasTotal .tarjetasWrapper .contenidoTarjeta{} 
+ */
+.tarjetasTotal .tarjetasWrapper .contenidoTarjeta p{
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+/*------------------------boton del whapp-----------*/
+.flotante2{
+    box-shadow: 0 0 1.4rem grey;
+   position: fixed;
+   right: 3rem;
+   bottom: 3rem;
+   font-size: 22px;
+   background-color: #2dd449;
+   color: white;
+   width: 6rem;
+   height: 6rem;
+   cursor: pointer;
+   border: none;
+   border-radius: 50%;
+   z-index: 20;
+}
+/*------------------------boton del whapp-----------*/
+
+/*------------------------FOOTER----------*/
+footer{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: black;
+}
+footer .foot1{
+    flex: 1;
+    padding: 2.5rem;
+}
+footer .foot1 p{
+    margin: 2rem 2rem 3rem 2rem;
+}
+footer .foot1 .redesfoot{
+    width: 82%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .foot1 .redesfoot .redf{
+    color: white;
+    background: #524d4d;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+}
+
+footer .foot2{
+   flex: 1;
+   padding: 2.5rem;
+}
+footer .foot2 ul{
+    margin: 2rem 1.2rem 1.2rem 1.2rem;
+}
+footer .foot2 ul li{
+    padding-bottom: 1rem;
+}
+
+footer .foot3{
+    flex: 1;
+    padding: 2.5rem;
+}
+footer .foot3 ul{
+    margin: 2rem;
+}
+footer .foot3 ul li{
+    padding: 1rem;
+    font-weight: 500;
+}
+footer .foot3 ul li span{
+    margin-right: 1.2rem;
+
+}
+.footitulo{
+    text-decoration: underline red 5px;
+    margin-bottom: 3.2rem;
+}
+
+/*------------------------FOOTER----------*/
+/*--mi firma--*/
+.micw{
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: #fdf88a;
+    height: 3rem;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---mi firma----*/
+
+/*-----------------------QUIENES SOMOS---------*/
+.titullodenosotros{
+    width: 100%;
+    height: 16vh;
+}
+.titullodenosotros h4{
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.6rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+}
+.whowrap{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    color: white;
+}
+.whowrap .whobox{
+   height: 100%;
+   padding: 3.5rem;
+}
+.whowrap .whobox p{
+    font-size: 2.2rem;
+}
+.whowrap .whobox1 p{
+   margin-top: 3rem;
+
+}
+.whowrap .whobox1{
+    order: 2;
+    flex-basis: 40%;
+    background: #4a4a4a;
+}
+.whowrap .whobox1 h4{
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 3.5rem;
+}
+.whowrap .whobox span{
+    width: 100%;
+    margin: 2rem 0 2rem 50%;
+    font-size: 4rem;
+    color: #73b711;
+    display: block;
+}
+.whowrap .whobox2{
+    flex-basis: 60%;
+    background: rgb(211 211 211 / 0.7);
+    color: black;
+    padding: 4rem;
+    height: 100%;
+}
+.whowrap .whobox2 h4{
+    color: black;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+.whowrap .whobox2 .cajaraton{
+    width: 100%;
+    margin: 0;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+.whowrap .whobox2 .cajaraton img{
+    width: 7rem;
+}
+
+.whowrap .whobox2 p{
+   font-weight: 600;
+}
+/*-----------------------QUIENES SOMOS---------*/
+
+/*-----------------------PARALLAX---------*/
+
+ 
+ 
+  .contenedorparalax {
+      background-image: url(img/paralax.jpg);
+      width: 100%;
+      height: 65vh;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+  }
+  .contenedorparalax .contactoFiltro{
+    width: 100%;
+    height: 100%;
+    /*background: rgb(43, 62, 80,.85); */
+     background-image:  linear-gradient(45deg, rgb(180 28 139 / 0.6), rgb(49 54 146 / 0.6)); 
+  }
+  .contenedorparalax .contactoFiltro .paralax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .contenedorparalax .contactoFiltro .paralax h3{
+      color: white;
+  }
+  .contenedorparalax .contactoFiltro .paralax h3{
+      font-size: 4rem;
+
+  }
+  .contenedorparalax .contactoFiltro .paralax p{
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 2rem;
+      color: white;
+  }
+  .lineadelparalax{
+    border: 18px solid red;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: -78px;
+    top: 34%;
+    border-top: transparent;
+    border-right: transparent;
+  }
+
+
+/*----------------------SERVICIOS------------------------*/
+   
+.contServ {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background:  linear-gradient(to top left, #0be9ec33, transparent,#cddc3985);
+}
+.contServ .serv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    position: relative;
+}
+.contServ .serv1 .burbuja1{
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(240deg, #0c52ef, aqua, rgb(0, 128, 0,.5));
+    border-radius: 50%;
+    position: absolute;
+    top: -18%;
+    left: -114px;
+    z-index: -1;
+}
+.contServ .serv1 .burbuja2{
+    width: 35rem;
+    height: 36rem;
+   /* background:  radial-gradient(white, rgba(0, 0, 255, 0.568));*/
+    background-image: linear-gradient(to top left, #a69af7,#7563f0);
+    box-shadow: 0 20px 20px rgb(0, 0, 0,.3), 0 0 50px rgb(0, 0, 0,.3);
+    background: linear-gradient(#940cef, rgba(0, 204, 255, 0.308), rgba(250, 242, 137, 0.5));
+    border-radius: 50%;
+    position: absolute;
+    top: 77%;
+    right: -29%;
+    z-index: -1;
+}
+.contServ .serv1 .burbuja3{
+    width: 15rem;
+    height: 16rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 27%;
+    right: -33% ;
+    background:  radial-gradient(white, rgba(0, 0, 255, 0.568));
+    box-shadow: 0 20px 20px rgb(0, 0, 0,.3), 0 0 50px rgb(0, 0, 0,.3);
+}
+.contServ .serv1 .contCompu{
+  /* background: linear-gradient(240deg, #0c52ef, aqua, rgb(0, 128, 0,.5)); */
+  padding: 2rem;
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  background:  radial-gradient(white, rgba(0, 0, 255, 0.568));
+  box-shadow: 0 20px 20px rgb(0, 0, 0,.3), 0 0 50px rgb(0, 0, 0,.3);
+  z-index: 1;
+  perspective: 1200px;
+}
+.contServ .serv1 .contCompu img{
+    width: 33rem;
+    transform-style: preserve-3d;
+   
+}
+
+.contServ .serv2{
+    flex-basis: 60%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contServ .serv2 h3{
+    position: absolute;
+    top: 8%;
+    font-size: 4rem;
+}
+
+
+.contServ .serv2 .serv2Lista ul{
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contServ .serv2 .serv2Lista ul li{
+
+    font-weight: 600;
+}
+.simpleCheck{
+    margin-right: 1rem;
+}
+
+            
+
+/*----------------------SERVICIOS------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
